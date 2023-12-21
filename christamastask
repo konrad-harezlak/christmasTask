@@ -1,0 +1,9 @@
+frontend:
+axios
+
+
+backend:
+express
+nodemon
+cors
+pg
