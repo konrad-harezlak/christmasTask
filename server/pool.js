@@ -1,7 +1,8 @@
 const { Pool } = require('pg');
+require('dotenv').config();
 
 const pool = new Pool({
-    connectionString: 'postgres://ayaogfbj:Q88UcpQGQlBD4yeq3YtxvtI44HSfm2VZ@ella.db.elephantsql.com/ayaogfbj'
+    connectionString: process.env.DATABASE_URL
 })
 
 module.exports = pool;

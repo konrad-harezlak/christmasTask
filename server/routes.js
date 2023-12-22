@@ -5,6 +5,6 @@ const packageController = require('./packageController')
 const elfController = require('./elfController')
 
 router.post('/addElf', elfController.addElf)
-router.post('/addPackage',packageController.addPackage)
+router.post('/addPackage/:name',packageController.addPackage)
 
 module.exports= router;
